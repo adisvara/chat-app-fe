@@ -1,7 +1,6 @@
 import './App.css'
 import { Join } from './components/Join'
-import { Join2 } from './components/Join2'
-import { Message } from './components/Message'
+import { Messages } from './components/Messages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Join/>}/>
-        <Route path='/room' element={<Message/>}/>
+        <Route path='/messages' element={<Messages/>}/>
       </Routes>
     </BrowserRouter>
       
